@@ -10,6 +10,7 @@ public class Tester {
 		
 		customers.add(new Customer(5000));
 		customers.add(new SilverCustomer(7500));
+		customers.add(new GoldenCustomer(10000));
 		for (int i=0; i<customers.size(); i++){
 			Customer c = customers.get(i);
 			c.print();
