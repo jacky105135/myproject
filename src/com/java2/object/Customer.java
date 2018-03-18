@@ -10,7 +10,7 @@ public class Customer {
 	public void print(){
 		
 		int total = (int)(amount*(1-discount));
-		System.out.println("­ì»ù: "+amount+"\t"+"°â»ù: "+total);
+		System.out.println("åŽŸåƒ¹: "+amount+"\t"+"å”®åƒ¹: "+total);
 		
 	}
 }
