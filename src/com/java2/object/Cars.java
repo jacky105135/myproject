@@ -1,10 +1,10 @@
-package com.java2.object.ObjectPractice;
+package com.java2.object;
 
 public class Cars {
 	
-	private String brand;//�~�P
-	private String color;//�C��
-	private int speed;//�t��
+	private String brand;//品牌
+	private String color;//顏色
+	private int speed;//速度
 
 	public Cars( String a , String b){
 		brand = a;

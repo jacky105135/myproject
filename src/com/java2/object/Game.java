@@ -1,4 +1,4 @@
-package com.java2.object.ObjectPractice;
+package com.java2.object;
 
 import java.util.Scanner;
 
