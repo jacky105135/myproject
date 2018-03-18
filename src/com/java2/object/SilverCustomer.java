@@ -8,14 +8,14 @@ public class SilverCustomer extends Customer{
 	}
 	
 	public void OverAThousandDiscount(){
-		if(amount > 1000)
-			amount = amount - 500;
+		if(amount > 5000)
+			amount = amount - 1000;
 	}
 	
 	@Override
 	public void print(){
 		OverAThousandDiscount();
 		int total = (int)(amount*(1-discount));
-		System.out.println(amount+"\t"+total);
+		System.out.println("­ì»ù: "+amount+"\t"+"°â»ù: "+total);
 	}
 }
