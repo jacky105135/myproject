@@ -1,10 +1,10 @@
-package com.java2.object;
+package com.java2.object.ObjectPractice;
 
 public class Cars {
 	
-	private String brand;//«~µP
-	private String color;//ÃC¦â
-	private int speed;//³t«×
+	private String brand;//ï¿½~ï¿½P
+	private String color;//ï¿½Cï¿½ï¿½
+	private int speed;//ï¿½tï¿½ï¿½
 
 	public Cars( String a , String b){
 		brand = a;

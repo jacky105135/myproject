@@ -1,4 +1,4 @@
-package com.java2.object;
+package com.java2.object.inheritance;
 
 public class SilverCustomer extends Customer{
 	
