@@ -7,5 +7,14 @@ public class SilverCustomer extends Customer{
 		super.discount = 0.1f;
 	}
 	
+	public void OverAThousandDiscount(){
+		if(amount > 1000)
+			amount = amount - 500;
+	}
 	
+	@Override
+	public void print(){
+		OverAThousandDiscount();
+		int total = (int)(amount*(1-discount));
+	}
 }
