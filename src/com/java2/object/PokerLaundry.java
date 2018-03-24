@@ -23,7 +23,10 @@ public class PokerLaundry {
 
 		for (int i = 0; i < a.length; i++) {
 			int c = a[i];
-			System.out.println((c % 13) + 1 + "" + flowers.charAt(c / 13));
+			System.out.print((c % 13) + 1 + "" + flowers.charAt(c / 13)+" ");
+			if((i+1)%13==0){
+				System.out.println();
+			}
 		}
 	}
 
