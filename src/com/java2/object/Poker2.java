@@ -15,7 +15,7 @@ public class Poker2 {
 
 	public Poker2() {
 		for (int i = 0; i < 52; i++) {
-			card.add((i % 13) + 1 +""+flowers.charAt(i / 13));
+			card.add((i % 13) + 1 + "" + flowers.charAt(i / 13));
 		}
 	}
 
@@ -25,7 +25,7 @@ public class Poker2 {
 
 	public void show() {
 		for (int i = 0; i < 52; i++) {
-			System.out.print(card.get(i)+ " ");
+			System.out.print(card.get(i) + " ");
 			if ((i + 1) % 13 == 0) {
 				System.out.println();
 			}
