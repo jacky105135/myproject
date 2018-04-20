@@ -13,6 +13,8 @@ public class FileTester {
 			out.write(66);
 			out.write(67);
 			out.write(102);
+			out.flush();
+			out.close();
 		} catch (FileNotFoundException e) {
 			System.out.println("File not found");
 		} catch (IOException e) {

@@ -7,6 +7,10 @@ public class Customer {
 		this.amount = amount;
 	}
 	
+	public Customer(Object amount2) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public void print(){
 		
 		int total = (int)(amount*(1-discount));
