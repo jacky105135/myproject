@@ -24,15 +24,10 @@ public class Sogo {
 
 	}
 
-	public static void main(String[] args) {
-		Sogo sogo = new Sogo();
-		sogo.start();
-	}
-
 	public void start() {
 		int function = 0;
-		showfunction();
 		while (function != 3) {
+			showfunction();
 			function = scan.nextInt();
 			switch (function) {
 			case 1:
@@ -102,7 +97,6 @@ public class Sogo {
 			out.println(type + "\t" + amount);
 			out.flush();
 			out.close();
-			start();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -116,4 +110,10 @@ public class Sogo {
 		System.out.println("2)印出銷售報表");
 		System.out.println("3)結束程式");
 	}
+	
+	public static void main(String[] args) {
+		Sogo sogo = new Sogo();
+		sogo.start();
+	}
+
 }
