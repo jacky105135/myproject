@@ -52,7 +52,6 @@ public class Sogo {
 							System.out.println("資料格式有誤");
 						}
 						line = br.readLine();
-
 					}
 				} catch (FileNotFoundException e) {
 					// TODO Auto-generated catch block

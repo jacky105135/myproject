@@ -4,6 +4,7 @@ public class Sales {
 
 	int type;
 	int amount;
+	
 	public Sales(){
 		
 	}

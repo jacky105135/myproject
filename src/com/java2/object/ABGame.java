@@ -17,7 +17,7 @@ public class ABGame {
 		Scanner S = new Scanner(System.in);
 		while (A != 4) {
 			System.out.println("Please enter your numbers:");
-			A = 0;
+			A = 0;//歸零
 			B = 0;
 			String s = S.nextLine();
 			for (int i = 0; i < length; i++) {

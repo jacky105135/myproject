@@ -1,7 +1,9 @@
 package com.java2.object.inheritance;
 
 public class GoldenCustomer extends SilverCustomer {
+	
 	int returnMoney;
+	
 	public GoldenCustomer(int amount) {
 		super(amount);
 	}
