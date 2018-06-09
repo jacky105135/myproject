@@ -24,11 +24,10 @@ public class Snow extends Thread {
 			int movement = r.nextInt(3) - 1;
 			x = x - movement;
 			// System.out.println(getName() + ":(" + x + "," + y + ")");
-			// System.out.println(new String(new char[x]).replace("\0", " ")+
-			// "雪");
+			// System.out.println(new String(new char[x]).replace("\0", " ")+ "雪");
 			snowCanvas.repaint(); // 必須讓畫布刷新否則不會有下雪的效果
 			try {
-				sleep(50);
+				sleep(50); // 0.05sec
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
