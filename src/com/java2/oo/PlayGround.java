@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class PlayGround {
 	
 	List<Player> playerlist = new ArrayList<>();
-
 	public void addPlayer(Player player) {
 		playerlist.add(player);
 	}
@@ -16,7 +15,9 @@ public class PlayGround {
 		System.out.println("請輸入玩家姓名:");
 		Scanner scanner = new Scanner(System.in);
 		String name = scanner.nextLine();
-		Player player = new Player(100, name, 0);
+		playerlist.add(new Player(100, name, 0));
+		//System.out.println("Hello,"+ name + "!!!");
+		
 	}
 	
 }
