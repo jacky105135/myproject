@@ -53,7 +53,7 @@ public class PlayMain {
 			
 			for (int f = 1; f < routes.length; f++) {
 				if(routes[f].equals(traps.get(0))||routes[f].equals(traps.get(1))||routes[f].equals(traps.get(2))||routes[f].equals(traps.get(3))||routes[f].equals(traps.get(4))){	
-					hp = hp - 50;
+					hp = hp - 20;
 					steps = steps + 1;
 					//System.out.println(hp);
 					
