@@ -68,6 +68,7 @@ public class PlayMain {
 
 			System.out.print(routes[0] + " → ");
 			for (int f = 1; f < routes.length; f++) {
+
 				if (routes[f].equals(traps.get(0)) || routes[f].equals(traps.get(1)) || routes[f].equals(traps.get(2))
 						|| routes[f].equals(traps.get(3)) || routes[f].equals(traps.get(4))) {
 					hp = hp - 20 - step;
@@ -101,7 +102,6 @@ public class PlayMain {
 					}
 				}
 			}
-
 			// hp = hp - steps;
 
 			String A = null;
@@ -126,14 +126,12 @@ public class PlayMain {
 
 			System.out.println("status : " + A);
 
-		} catch (FileNotFoundException e) {
+			} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} catch (IOException e) {
+			} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 	}
-
 }
