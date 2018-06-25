@@ -48,7 +48,7 @@ public class Schedule {
 		for (Course c : courses) {
 			if (!c.isAvailable(checkday, checkstarttime)) {
 				int time = Integer.parseInt(c.getStarttime()) + Integer.parseInt(c.getDuration());
-				System.out.println("[有課: " + c.getId() + " " + c.getName() + " " + "到 " + time + "時");
+				System.out.println("[有課: " + c.getId() + " " + c.getName() + " " + "到 " + time + "時]");
 				pass = false;
 			}
 		}
