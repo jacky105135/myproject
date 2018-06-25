@@ -1,0 +1,5 @@
+C004,English,2,10,2
+A003,Science,3,13,3
+B002,History,4,8,3
+D001,Chinese,4,14,2
+B004,Math,5,9,3
