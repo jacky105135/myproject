@@ -7,12 +7,15 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Random;
 
 public class RoundSet {
 
-	List<Integer> map = new ArrayList<>();
+	// Bingo b = new Bingo();
+	List<Integer> circle = new ArrayList<>();//被選到數字的position
+	List<Integer> map = new ArrayList<>();//bingo地圖
+	List<Bingo> bingo = new ArrayList<>();
 	int x, total;
+	String[] read;
 
 	public void getsize() {
 		try {
@@ -42,6 +45,9 @@ public class RoundSet {
 					}
 				}
 			}
+			String a = br.readLine();
+			read = a.split(",");
+
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -52,7 +58,7 @@ public class RoundSet {
 	}
 
 	public void shuffle() {
-		Collections.shuffle(map);
+		Collections.shuffle(map);//將地圖打亂排序
 	}
 
 	public void show() {
@@ -64,6 +70,25 @@ public class RoundSet {
 			}
 			if ((i + 1) % x == 0) {
 				System.out.println();
+			}
+			bingo.add(new Bingo(map.get(i), i));//將地圖加入bingo類別
+		}
+	}
+
+	/*
+	 * public void getposition() { for (int i = 0; i < read.length; i++) {
+	 * System.out.print(read[i]+" "); int checknum = Integer.parseInt(read[i]);
+	 * //System.out.println(b.getposition(checknum)); } }
+	 */
+
+	public void getposition() {
+		for (int i = 0; i < read.length; i++) {
+			int checknum = Integer.parseInt(read[i]);
+			for (Bingo b : bingo) {
+				if (!b.getposition(checknum)) {
+					System.out.print(b.getPosition() + " ");
+					circle.add(b.getPosition());
+				}
 			}
 		}
 	}

@@ -7,7 +7,8 @@ public class MainBingo {
 		set.getsize();
 		set.shuffle();
 		set.show();
-		
+		System.out.println();
+		set.getposition();
 	}
 
 }
