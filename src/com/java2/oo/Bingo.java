@@ -36,8 +36,6 @@ public class Bingo {
 			show = false;
 		}
 		return show;
-		
-		
 	} 
 	
 }
