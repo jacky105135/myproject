@@ -9,6 +9,8 @@ public class MainBingo {
 		set.show();
 		System.out.println();
 		set.getposition();
+		System.out.println();
+		set.setbacktable();
 	}
 
 }

@@ -11,8 +11,8 @@ import java.util.List;
 public class RoundSet {
 
 	// Bingo b = new Bingo();
-	List<Integer> circle = new ArrayList<>();//被選到數字的position
-	List<Integer> map = new ArrayList<>();//bingo地圖
+	List<Integer> circle = new ArrayList<>();// 被選到數字的position
+	List<Integer> map = new ArrayList<>();// bingo地圖
 	List<Bingo> bingo = new ArrayList<>();
 	int x, total;
 	String[] read;
@@ -58,7 +58,7 @@ public class RoundSet {
 	}
 
 	public void shuffle() {
-		Collections.shuffle(map);//將地圖打亂排序
+		Collections.shuffle(map);// 將地圖打亂排序
 	}
 
 	public void show() {
@@ -71,7 +71,7 @@ public class RoundSet {
 			if ((i + 1) % x == 0) {
 				System.out.println();
 			}
-			bingo.add(new Bingo(map.get(i), i));//將地圖加入bingo類別
+			bingo.add(new Bingo(map.get(i), i));// 將地圖加入bingo類別
 		}
 	}
 
@@ -88,6 +88,41 @@ public class RoundSet {
 				if (!b.getposition(checknum)) {
 					System.out.print(b.getPosition() + " ");
 					circle.add(b.getPosition());
+				}
+			}
+		}
+	}
+
+	public void setbacktable() {
+		int[] tableset = new int[total];
+
+		for (int i = 0; i < total; i++) {
+			for (int k = 0; k < read.length; k++) {
+				if (i == circle.get(k)) {
+					tableset[i] = 1;
+					if (i == 0) {
+						System.out.print(tableset[i] + " ");
+					} else if (i % 5 == 4) {
+						System.out.print(tableset[i]);
+						System.out.println();
+					} else {
+						System.out.print(tableset[i] + " ");
+					}
+				} else {
+					if (i == 0) {
+						tableset[i] = 0;
+						System.out.print(tableset[i] + " ");
+						break;
+					} else if (i % 5 == 4) {
+						tableset[i] = 0;
+						System.out.print(tableset[i]);
+						System.out.println();
+						break;
+					} else {
+						tableset[i] = 0;
+						System.out.print(tableset[i] + " ");
+						break;
+					}
 				}
 			}
 		}
